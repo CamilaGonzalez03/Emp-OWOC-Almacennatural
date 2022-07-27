@@ -1,0 +1,14 @@
+.boton{
+    font-family: $font-titulos;
+    font-weight: bold;
+    color: $color-main;
+    background-color: $color-botones;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 10rem;
+    margin-bottom: 2rem;
+    &:hover {
+        transform: translate(0px, 0px) scale(1.1, 1.1);
+        transition: all 1s;
+    }
+}

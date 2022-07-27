@@ -1,0 +1,8 @@
+@mixin titulos {
+    text-align: center;
+    font-family: $font-titulos;
+    font-size: 50px;
+    font-weight: bold;
+    color: $color-botones;
+    margin-top: 3.5rem;
+}

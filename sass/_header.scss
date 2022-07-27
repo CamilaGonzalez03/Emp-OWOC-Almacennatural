@@ -1,0 +1,14 @@
+.navegacion__color{
+    background-color: $color-navegacion;
+}
+
+a {
+    font-family: $font-subtitulos;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.dropdown-item{
+    background-color: $color-footer;
+    color: $color-main;
+}

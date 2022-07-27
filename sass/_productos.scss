@@ -1,0 +1,18 @@
+.productos__titulo{
+    @include titulos;
+}
+
+.container__productos {
+    font-family: $font-titulos;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    color:$color-botones;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row {
+    width: 100%;
+}

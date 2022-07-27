@@ -1,0 +1,60 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+
+DESCRIPCIÓN: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+"Encontrá todo lo que buscas. Venta de productos naturales, frutos secos, granolas, semillas y más!"
+
+KEYWORDS: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio:
+"FRUTOS SECOS, SEMILLAS, GRANOLA, CORDOBA, FRUTOS SECOS CORDOBA, YERBA ORGANICA, NATURAL, PRODUCTOS NATURALES, FRUTAS DESECADAS"
+
+TITLE: para la página index utilice sólo el titulo de la página por ser el inicio: OWOC ALMACEN NATURAL
+
+ENCABEZADOS: para el encabezado del h1 utilicé el texto “OWOC ALMACEN NATURAL”.
+
+
+En el archivo productos.html sumé el SEO con las siguientes características:
+
+DESCRIPCIÓN: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+"Mira nuestros productos naturales, frescos, sellados directos para consumir, frutos secos, granolas, mix, frutas desecadas, semillas y más!"
+
+KEYWORDS: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio:
+"CALIDAD, FRUTOS SECOS, SEMILLAS, GRANOLA, CORDOBA, FRUTOS SECOS CORDOBA, YERBA ORGANICA, NATURAL, PRODUCTOS NATURALES, FRUTAS DESECADAS"
+
+TITLE: Productos - OWOC Almacen Natural
+
+ENCABEZADOS: para el encabezado del h1 utilicé el texto “PRODUCTOS”
+
+En el archivo promociones.html sumé el SEO con las siguientes características:
+
+DESCRIPCIÓN: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+"Ofertas, descuentos, promos para el mate, para para tus almuerzos y cenas, para juntarte a picar."
+
+KEYWORDS: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio:
+"OFERTAS, DESCUENTOS, PROMOCIONES, INCREIBLES OFERTAS, PROMOS"
+
+TITLE: Promociones - OWOC Almacen Natural
+
+ENCABEZADOS: para el encabezado del h1 utilicé el texto “PROMOCIONES”
+
+En el archivo contacto.html sumé el SEO con las siguientes características:
+
+DESCRIPCIÓN: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+"Dejanos tu consulta en owocalmacennatural@gmail.com o por whatsapp al +549 3516-603425. Venta de productos naturales, frutos secos, granolas, semillas y más!"
+
+KEYWORDS: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio:
+"OWOC, FRUTOS SECOS, SEMILLAS, GRANOLA, CORDOBA, FRUTOS SECOS CORDOBA, YERBA ORGANICA, NATURAL, PRODUCTOS NATURALES, FRUTAS DESECADAS"
+
+TITLE: Contacto - OWOC Almacen Natural
+
+ENCABEZADOS: para el encabezado del h1 utilicé el texto “DEJANOS TU MENSAJE”
+
+En el archivo nosotras.html sumé el SEO con las siguientes características:
+
+DESCRIPCIÓN: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+"Somos una empresa familiar, creemos en la alimentación consciente. Venta de productos natuales, frutos secos, granolas, semillas y más!"
+
+KEYWORDS: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio:
+"FRUTOS SECOS, CORDOBA, NATURAL, PRODUCTOS NATURALES, NOSOTRAS, EMPRESA, EMPRENDIMIENTO"
+
+TITLE: Nosotras - OWOC Almacen Natural
+
+ENCABEZADOS: para el encabezado del h1 utilicé el texto “UN POCO DE NOSOTRAS”

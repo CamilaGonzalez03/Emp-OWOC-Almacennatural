@@ -1,0 +1,18 @@
+.promociones__titulo{
+    @include titulos;
+}
+
+.container__promociones {
+    font-family: $font-titulos;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    color:$color-footer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row {
+    width: 100%;
+}

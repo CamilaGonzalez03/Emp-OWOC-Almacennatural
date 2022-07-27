@@ -1,0 +1,47 @@
+@media (min-width: 320px) and (max-width: 540px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    section{
+        flex-direction: column;
+    }
+    
+    .presentacion__imagen{
+        width: 250px;
+    }
+    
+    .nosotras__imagen{
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 541px) and (max-width: 720px) {
+
+
+header {
+    flex-direction: column;
+}
+
+ul {
+    flex-direction: column;
+}
+
+section{
+    flex-direction: column;
+}
+
+.presentacion__imagen{
+    width: 250px;
+}
+
+.nosotras__imagen{
+    width: 250px;
+}
+}

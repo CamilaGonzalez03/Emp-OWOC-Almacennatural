@@ -1,0 +1,23 @@
+.nosotras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $color-main;
+    margin: 1rem;
+    &__titulo{
+        @include titulos;
+    }
+    &__parrafo{
+        font-family: $font-subtitulos;
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-navegacion;
+        margin-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    &__imagen{
+        border-radius: 30px;
+    }
+}
