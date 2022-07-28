@@ -105,3 +105,4 @@ const nuevoCliente = ()=> {
 const nuevoCliente = new Facturacion (nombreCliente, apellidoCliente, direccionCliente, dniCliente);
     console.log(nuevoCliente);
 }
+

@@ -197,7 +197,11 @@ form {
   form #boton {
     background-color: #700475;
     color: white;
-    padding: 0.5rem; }
+    padding: 1rem;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color: white; }
 
 .main__whatsapp {
   display: flex;

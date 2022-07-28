@@ -32,7 +32,11 @@ form{
     #boton{
         background-color: $color-botones;
         color: $color-main;
-        padding: 0.5rem;
+        padding: 1rem;
+        width: 100%;
+        font-family: $font-titulos;
+        font-size: 30px;
+        color: $color-main;
     }
 }
 

@@ -57,15 +57,15 @@
     </header>  
     <main>
         <section class="main__formulario">
-            <form>
+            <form id="formulario">
                 <h1 class="main__titulo">DEJANOS TU MENSAJE</h1>
-                <input type="text" placeholder="Nombre"/>
-                <input type="text" placeholder="Apellido"/>
-                <input type="email" placeholder="E-mail"/>
+                <input type="text" name='nombre' placeholder="Nombre"/>
+                <input type="text" name='apellido' placeholder="Apellido"/>
+                <input type="email" name='email' placeholder="E-mail"/>
                 <div>
-                    <textarea placeholder="Mensaje"></textarea>
+                    <textarea type="text" name='mensaje' placeholder="Mensaje"></textarea>
                 </div>
-                <input class="main__formilarioEnviar" type="button" value="ENVIAR" id="boton"/>
+                <button class="main__formilarioEnviar" type='submit' value="ENVIAR" id="boton">ENVIAR</button>
             </form>    
             <div class="main__whatsapp">
                 <p>Si preferis, dejanos tu consulta por Whatsapp <a href="https://api.whatsapp.com/send?phone=543516603425&text=%C2%A1Hola!%20Quiero%20hacer%20un%20pedido..." target="_blank"><img src="../recursos/whatsapp 50.png" alt="Logo de Whatsapp"/></a></p>
@@ -81,6 +81,7 @@
             <p>Copyright 2022 | OWOC Almacen Natural | Todos los derechos reservados</p>
         </section>
     </footer>
+    <script src="../javascript/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>    
 </html>
