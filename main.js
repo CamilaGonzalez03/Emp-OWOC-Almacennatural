@@ -60,7 +60,6 @@ let listaEntera = frutosSecos.concat(semillas, otrosProductos, frutasDesecadas);
 let producto = prompt("¿Que producto desea?");
 let busqueda = listaEntera.find(el => el.nombre == producto);
 console.log(busqueda);
-
 if (busqueda !='undefined'){
     alert(`Informacion de ${busqueda.nombre}, su precio por kilo es de: $${busqueda.precio}`);
 }else {
