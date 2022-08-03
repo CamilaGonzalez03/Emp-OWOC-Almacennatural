@@ -1,0 +1,30 @@
+.carrito__titulo{
+    font-family: $font-titulos;
+    color: $color-footer;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemCartTotal{
+    font-family: $font-titulos;
+    font-weight: bold;
+}
+
+.row {
+    margin: 20px
+}
+
+.btn__comprar {
+    font-family: $font-titulos;
+    font-weight: bold;
+    background-color: $color-navegacion;
+    border: 5px $color-navegacion;
+    color: $color-main;
+    font-size: 20px;
+    width: 120px;
+}

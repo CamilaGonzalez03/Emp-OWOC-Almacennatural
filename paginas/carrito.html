@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Square+Peg&display=swap" rel="stylesheet"> 
-    <title>Productos - Frutos secos - OWOC Almacen Natural</title>
+    <title>CARRITO DE COMPRAS - OWOC Almacen Natural</title>
 </head>
 <body>
     <header>
@@ -61,65 +61,39 @@
         </nav>
     </header>
     <main>
-        <h1 class="productos__titulo">FRUTOS SECOS</h1>
-        <section class="container__productos">
-            <article class="row">
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/Almendras 200.jpg" alt="Alemendras"/>
-                    <p class="card__titulo">Almendra Non Parrel x Kg</p>
-                    <p class="precio">$3080</p>
-                    <button class="boton">Añadir al carrito</button>
+        <h1 class="carrito__titulo">Carrito de compras</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal">Total: 0</h3>
                 </div>
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/Nueces 200.jpg" alt="Nueces"/>
-                    <p class="card__titulo">Nuez Blanca Light x Kg</p>
-                    <p class="precio">$1900</p>
-                    <button class="boton">Añadir al carrito</button>
+                <div class="col">
+                    <button class="btn__comprar">COMPRAR</button>
                 </div>
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/Castanas 200.jpg" alt="Castañas"/>
-                    <p class="card__titulo">Castaña S2 x Kg</p>
-                    <p class="precio">$1500</p>
-                    <button class="boton">Añadir al carrito</button>
-                </div>
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/almendra-guara 200.jpg" alt="Almendra Guara"/>
-                    <p class="card__titulo">Almendra Guara x Kg</p>
-                    <p class="precio">$2235</p>
-                    <button  class="boton">Añadir al carrito</button>
-                </div>
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/mix-clasico 200.jpg" alt="Mix Clasico"/>
-                    <p class="card__titulo">Mix Clasico x Kg</p>
-                    <p class="precio">$1725</p>
-                    <button  class="boton">Añadir al carrito</button>
-                </div>
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/mix tropical 200.jpg" alt="Mix Tropical"/>
-                    <p class="card__titulo">Mix Tropical x Kg</p>
-                    <p class="precio">$1285</p>
-                    <button  class="boton">Añadir al carrito</button>
-                </div>
-                <div class="container__card col-xl-3 col-md-4 col-sm-6">
-                    <img class="card__imagen" src="../recursos/mix arandano 200.jpg" alt="Mix Arandano"/>
-                    <p class="card__titulo">Mix Arandano x Kg</p>
-                    <p class="precio">$1470</p>
-                    <button class="boton">Añadir al carrito</button>
-                </div>
-            </article>
-        </section>    
-    </main>    
+            </div>
+    </main>
     <footer>
-        <section class="footer__imagenes">
-            <a href="https://instagram.com/owoc.almacennatural?igshid=YmMyMTA2M2Y=" target="_blank"><img src="../recursos/instagram 50.png" alt="Logo de Instagram"/></a>
-            <a href="https://www.facebook.com/owoc.almacennatural/" target="_blank"><img src="../recursos/facebook 50.png" alt="Logo de Facebook"/></a>
-            <a href="https://api.whatsapp.com/send?phone=543516603425&text=%C2%A1Hola!%20Quiero%20hacer%20un%20pedido..." target="_blank"><img src="../recursos/whatsapp 50.png" alt="Logo de Whatsapp"/></a>
-        </section>
-        <section class="footer__derechos">
-            <p>Copyright 2022 | OWOC Almacen Natural | Todos los derechos reservados</p>
-        </section>
+    <section class="footer__imagenes">
+        <a href="https://instagram.com/owoc.almacennatural?igshid=YmMyMTA2M2Y=" target="_blank"><img src="../recursos/instagram 50.png" alt="Logo de Instagram"/></a>
+        <a href="https://www.facebook.com/owoc.almacennatural/" target="_blank"><img src="../recursos/facebook 50.png" alt="Logo de Facebook"/></a>
+        <a href="https://api.whatsapp.com/send?phone=543516603425&text=%C2%A1Hola!%20Quiero%20hacer%20un%20pedido..." target="_blank"><img src="../recursos/whatsapp 50.png" alt="Logo de Whatsapp"/></a>
+    </section>
+    <section class="footer__derechos">
+        <p>Copyright 2022 | OWOC Almacen Natural | Todos los derechos reservados</p>
+    </section>
     </footer>
-    <script src="../javascript/carrito.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../javascript/carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

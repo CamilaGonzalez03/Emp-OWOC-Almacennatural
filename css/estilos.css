@@ -260,6 +260,33 @@ form {
 .row {
   width: 100%; }
 
+.carrito__titulo {
+  font-family: "Poppins", sans-serif;
+  color: #520556;
+  font-weight: bold;
+  margin: 20px; }
+
+.tabla {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.itemCartTotal {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+
+.row {
+  margin: 20px; }
+
+.btn__comprar {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #CA431D;
+  border: 5px #CA431D;
+  color: white;
+  font-size: 20px;
+  width: 120px; }
+
 * {
   margin: 0;
   padding: 0; }
