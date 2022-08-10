@@ -1,17 +1,46 @@
 //FORMULARIO pagina contacto.
 
-const form = document.querySelector("#formulario");
+window.addEventListener('load', ()=> {
+    const form = document.querySelector('#formulario');
+    const formNombre = document.querySelector("#nombre");
+    const formApellido = document.querySelector("#apellido");
+    const formEmail = document.querySelector("#e-mail");
+    const formMensaje = document.querySelector("#mensaje");
 
-const enviarFormulario = (event) => {
-    event.preventDefault();
-    console.log(
-        event.target.nombre.value,
-        event.target.apellido.value,
-        event.target.email.value,
-        event.target.mensaje.value);
-    alert("El formulario ha sido enviado. Muchas gracias.");
-    form.reset ();
-}
 
-form.addEventListener("submit", enviarFormulario);
+//Validacion de los campos ingresados por el usuario.
+    const validaCampos = ()=> {
+        nombre = formNombre.value.trim();
+        apellido = formApellido.value.trim();
+        email = formEmail.value.trim();
+        mensaje = formMensaje.value.trim();
+
+        if(nombre === "" || apellido === "" || email === "" || mensaje === "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Completar campo',
+            })
+        } else {
+            Swal.fire({
+                icon: 'success',
+                title: 'Su formulario ha sido enviado.',
+                text: 'Gracias!',
+            })
+        form.reset ();   
+        }
+
+        localStorage.setItem('Nombre', nombre)
+        localStorage.setItem('Apellido', apellido)
+        localStorage.setItem('Email', email)
+        localStorage.setItem('Mensaje', mensaje)
+
+    }
+
+//Almacenamiendo de datos a traves de localStorage.
+    form.addEventListener("submit", (e)=> {
+        e.preventDefault();
+        validaCampos();
+
+    })
+})
 

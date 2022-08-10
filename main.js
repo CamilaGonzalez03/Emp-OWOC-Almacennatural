@@ -40,15 +40,15 @@ let otrosProductos = [
     {nombre:"arroz yamani", precio: 230},
     {nombre:"azucar integral mascabo", precio: 430},
     {nombre:"coco rallado", precio: 1600},
-    {nombre:"granola clasica", precio: 520},
-    {nombre:"granola con pasta de mani", precio: 700},
-    {nombre:"granola crocante", precio: 650},
-    {nombre:"granola sin azucar", precio: 500},
+    {nombre:'granola clasica', precio: 520},
+    {nombre:'granola con pasta de mani', precio: 700},
+    {nombre:'granola crocante', precio: 650},
+    {nombre:'granola sin azucar', precio: 500},
     {nombre:"maiz frito", precio: 1190},
     {nombre:"mani saborizado", precio: 480},
     {nombre:"mantequilla de mani", precio: 380},
     {nombre:"sal rosada", precio: 430},
-    {nombre:"yerba agroecologica", precio: 930},
+    {nombre:'yerba agroecologica', precio: 930},
 ];
     console.log(otrosProductos);
 
@@ -58,7 +58,7 @@ let listaEntera = frutosSecos.concat(semillas, otrosProductos, frutasDesecadas);
 //BUSQUEDA DE UN PRODUCTO
 
 let producto = prompt("¿Que producto desea?");
-let busqueda = listaEntera.filter((allBusqueda) =>![listaEntera].includes(allBusqueda));
+let busqueda = listaEntera.filter((producto) => producto.nombre.includes('granola'));
 console.log(busqueda);
 
 if(busqueda !='undefined'){
