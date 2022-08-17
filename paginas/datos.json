@@ -1,0 +1,6 @@
+[
+    {"nombre":"Promo Mate", "descripcion":"1/2 yerba, 1/2 azucar mascabo, 1/2 granola crocante", "precio":1010},
+    {"nombre":"Promo Salado", "descripcion":"1/2 mani sab, 1/2 mani con sal, 1/2 mani con cascara, 1/4 maiz frito (sabores a elección)", "precio":850},
+    {"nombre":"Promo Semillas", "descripcion":"1/2 mix semillas, 100g sesamo blanco, 100g sesamo integral, 100g sesamo negro", "precio":750},
+    {"nombre":"Promo Frutos Secos", "descripcion":"1/4 nuez dorada, 1/4 almendra guara, 1/4 castaña S2, 1/4 mani sin sal", "precio":1500}
+]
