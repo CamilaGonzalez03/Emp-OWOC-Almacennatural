@@ -50,17 +50,37 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="carrito.html">
-                                <img src="../recursos/carrito-de-compras 32.png">
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <div class="carrito">
+            <p class="carrito__titulo">Tus productos</p>
+            <table class="table table-warning">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                </tr>
+                </thead>
+                <tbody class="tbody">
+                </tbody>
+            </table>
+            <br></br>
+            <div class="row mx-4">
+                <div class="col">
+                    <p class="itemCartTotal">Total: 0</p>
+                </div>
+                <div class="col d-flex justify-content-space-between">
+                    <button class="btn">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+
         <h1 class="productos__titulo">FRUTOS SECOS</h1>
         <section class="container__productos">
             <article class="row">
@@ -107,7 +127,7 @@
                     <button class="boton">Añadir al carrito</button>
                 </div>
             </article>
-        </section>    
+        </section>
     </main>    
     <footer>
         <section class="footer__imagenes">

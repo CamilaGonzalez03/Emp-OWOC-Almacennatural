@@ -1,4 +1,4 @@
-let nombreApellido = prompt ("Ingrese su Nombre y Apellido");
+/* let nombreApellido = prompt ("Ingrese su Nombre y Apellido");
     alert (`Hola ${nombreApellido}.`);
 
 //PRODUCTOS.
@@ -107,3 +107,4 @@ const nuevoCliente = new Facturacion (nombreCliente, apellidoCliente, direccionC
     console.log(nuevoCliente);
 }
 
+ */

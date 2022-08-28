@@ -56,43 +56,68 @@
         </nav>
     </header>
     <main>
+        <div class="carrito">
+            <p class="carrito__titulo">Tus productos</p>
+            <table class="table table-warning">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                </tr>
+                </thead>
+                <tbody class="tbody">
+                </tbody>
+            </table>
+            <br></br>
+            <div class="row mx-4">
+                <div class="col">
+                    <p class="itemCartTotal">Total: 0</p>
+                </div>
+                <div class="col d-flex justify-content-space-between">
+                    <button class="btn">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+
         <h1 class="productos__titulo">SEMILLAS</h1>
         <section class="container__productos">
             <article class="row">
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <img src="../recursos/sesamo blanco 200.jpg" alt="ASesamo blanco"/>
-                    <p>Sesamo Blanco x Kg</p>
-                    <p>$820</p>
+                <div class="container__card col-xl-3 col-md-4 col-sm-6">
+                    <img class="card__imagen" src="../recursos/sesamo blanco 200.jpg" alt="ASesamo blanco"/>
+                    <p class="card__titulo">Sesamo Blanco x Kg</p>
+                    <p class="precio">$820</p>
                     <button class="boton">Añadir al carrito</button>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <img src="../recursos/sesamo integral 200.jpg" alt="Sesamo integral"/>
-                    <p>Sesamo Integral x Kg</p>
-                    <p>$360</p>
+                <div class="container__card col-xl-3 col-md-4 col-sm-6">
+                    <img class="card__imagen" src="../recursos/sesamo integral 200.jpg" alt="Sesamo integral"/>
+                    <p class="card__titulo">Sesamo Integral x Kg</p>
+                    <p class="precio">$360</p>
                     <button class="boton">Añadir al carrito</button>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <img src="../recursos/sesamo negro 200.jpg" alt="Sesamo Negro"/>
-                    <p>Sesamo Negro x Kg</p>
-                    <p>$830</p>
+                <div class="container__card col-xl-3 col-md-4 col-sm-6">
+                    <img class="card__imagen" src="../recursos/sesamo negro 200.jpg" alt="Sesamo Negro"/>
+                    <p class="card__titulo">Sesamo Negro x Kg</p>
+                    <p class="precio">$830</p>
                     <button  class="boton">Añadir al carrito</button>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <img src="../recursos/quinoa 200.jpg" alt="Quinoa"/>
-                    <p>Quinoa x Kg</p>
-                    <p>$520</p>
+                <div class="container__card col-xl-3 col-md-4 col-sm-6">
+                    <img class="card__imagen" src="../recursos/quinoa 200.jpg" alt="Quinoa"/>
+                    <p class="card__titulo">Quinoa x Kg</p>
+                    <p class="precio">$520</p>
                     <button  class="boton">Añadir al carrito</button>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <img src="../recursos/Lino 200.jpg" alt="Lino"/>
-                    <p>Lino x Kg</p>
-                    <p>$300</p>
+                <div class="container__card col-xl-3 col-md-4 col-sm-6">
+                    <img class="card__imagen" src="../recursos/Lino 200.jpg" alt="Lino"/>
+                    <p class="card__titulo">Lino x Kg</p>
+                    <p class="precio">$300</p>
                     <button  class="boton">Añadir al carrito</button>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <img src="../recursos/girasol 200.jpg" alt="Girasol pelado"/>
-                    <p>Girasol Pelado x Kg</p>
-                    <p>$490</p>
+                <div class="container__card col-xl-3 col-md-4 col-sm-6">
+                    <img class="card__imagen" src="../recursos/girasol 200.jpg" alt="Girasol pelado"/>
+                    <p class="card__titulo">Girasol Pelado x Kg</p>
+                    <p class="precio">$490</p>
                     <button  class="boton">Añadir al carrito</button>
                 </div>
                 </article>
@@ -110,6 +135,5 @@
     </footer>
     <script src="../javascript/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </body>
 </html>

@@ -260,6 +260,38 @@ form {
 .row {
   width: 100%; }
 
+.carrito__titulo {
+  color: #CA431D;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: 20px; }
+
+.table {
+  color: #CA431D;
+  font-family: "Square Peg", cursive;
+  font-size: 30px;
+  margin-top: 20px; }
+
+.table__imagen {
+  width: 9rem; }
+
+.table__cantidad {
+  font-size: 25px;
+  font-weight: bold; }
+
+.itemCartTotal {
+  font-weight: bold;
+  font-family: "Square Peg", cursive;
+  font-size: 30px;
+  color: #CA431D; }
+
+.btn {
+  background-color: #CA431D;
+  font-family: "Poppins", sans-serif;
+  border: #CA431D;
+  color: white; }
+
 * {
   margin: 0;
   padding: 0; }

@@ -1,0 +1,39 @@
+
+
+.carrito__titulo{
+    color: $color-navegacion;
+    font-family: $font-titulos;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.table{
+    color: $color-navegacion;
+    font-family: $font-subtitulos;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.table__imagen{
+    width: 9rem;
+}
+
+.table__cantidad{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.itemCartTotal{
+    font-weight: bold;
+    font-family: $font-subtitulos;
+    font-size: 30px;
+    color: $color-navegacion;
+}
+
+.btn{
+    background-color: $color-navegacion;
+    font-family: $font-titulos;
+    border: $color-navegacion;
+    color: $color-main;
+}

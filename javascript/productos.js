@@ -1,31 +1,128 @@
-//VARIABLE PRODUCTOS.
+//Agrego producto al carrito
+const ClickBoton = document.querySelectorAll('.boton')
+const tbody = document.querySelector('.tbody')
+let carrito = []
 
-let listaProductos = [
-  {id: 1, nombre:"nuez blanca light", precio: 1900, img},
-  {id: 2, nombre:"almendra non parrel", precio: 3080},
-  {id: 3, nombre:"almendra guara", precio: 2120},
-  {id: 4, nombre:"castana", precio: 2680},
-  {id: 5, nombre:"mix clasico", precio: 1590},
-  {id: 6, nombre:"mix tropical", precio: 1180},
-  {id: 7, nombre:"mix arandano", precio: 1400},
-  {id: 9, nombre:"arandano rojo", precio: 2210},
-  {id: 10, nombre:"pasa negra", precio: 500},
-  {id: 11, nombre:"pasa rubia", precio: 890},
-  {id: 12, nombre:"tomate seco", precio: 1490},
-  {id: 13, nombre:"girasol pelado", precio: 490},
-  {id: 14, nombre:"lino", precio: 395},
-  {id: 15, nombre:"quinoa", precio: 690},
-  {id: 16, nombre:"sesamo blanco", precio: 1170},
-  {id: 17, nombre:"sesamo integral", precio: 420},
-  {id: 18, nombre:"sesamo negro", precio: 1180},
-  {id: 19, nombre:"arroz yamani", precio: 230},
-  {id: 20, nombre:"azucar integral mascabo", precio: 430},
-  {id: 21, nombre:"coco rallado", precio: 1600},
-  {id: 22, nombre:"mani saborizado", precio: 480},
-  {id: 23, nombre:"mantequilla de mani", precio: 380},
-  {id: 24, nombre:"yerba agroecologica", precio: 930},
+ClickBoton.forEach(btn => {
+  btn.addEventListener('click', addToCarritoItem)
+})
+
+function addToCarritoItem(e){
+  const boton = e.target;
+  const item = boton.closest('.container__card')
+  const itemImagen = item.querySelector('.card__imagen').src;
+  const itemTitulo = item.querySelector('.card__titulo').textContent;
+  const itemPrecio = item.querySelector('.precio').textContent;
+
+  const newItem= {
+    imagen: itemImagen,
+    titulo: itemTitulo,
+    precio: itemPrecio,
+    cantidad: 1
+  }
+
+  addItemCarrito(newItem)
+
+}
+
+function addItemCarrito(newItem){
   
+  const InputElemento = tbody.getElementsByClassName('input__elemento')
+  for(let i=0; i < carrito.length; i++){
+    if(carrito[i].titulo.trim() === newItem.titulo.trim()){
+      carrito[i].cantidad++;
+      const inputValue = InputElemento[i]
+      inputValue.value++;
+      CarritoTotal()
+      return null;
+    }
+  }
 
-];
+  carrito.push(newItem)
 
+  renderCarrito()
+}
 
+function renderCarrito(){
+  
+  tbody.innerHTML = ''
+  carrito.map(item => {
+    const tr = document.createElement('tr')
+    tr.classList.add('ItemCarrito')
+    const Content = `
+      <th scope="row">1</th>
+      <td class="table__productos">
+        <img class="table__imagen" src=${item.imagen} alt="">
+        <p class="table__titulo">${item.titulo}</p>
+      </td> 
+      <td class="table__precio">${item.precio}</td>
+      <td class="table__cantidad">
+        <input type="number" min="1" value=${item.cantidad} class="input__elemento">
+        <button class="delete btn btn-danger">X</button>
+      </td>
+    `
+    tr.innerHTML = Content;
+    tbody.append(tr)
+
+    tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
+    tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
+
+  })
+
+  CarritoTotal()
+
+}
+
+function CarritoTotal(){
+  let Total = 0;
+  const itemCartTotal = document.querySelector('.itemCartTotal')
+  carrito.forEach((item) => {
+    const precio = Number(item.precio.replace("$", ''))
+    Total = Total + precio*item.cantidad
+  })
+
+  itemCartTotal.innerHTML = `Total $${Total}`
+  addLocalStorage()
+}
+
+function removeItemCarrito(e){
+  const buttonDelete = e.target
+  const tr = buttonDelete.closest(".ItemCarrito")
+  const titulo = tr.querySelector('.table__titulo').textContent;
+  
+  for(let i=0; i<carrito.length; i++){
+    
+    if(carrito[i].titulo.trim() === titulo.trim()){
+      carrito.splice(i, 1)
+    }
+    }
+  tr.remove()
+  CarritoTotal()
+}
+
+function sumaCantidad(e){
+  const sumaInput = e.target
+  const tr = sumaInput.closest(".ItemCarrito")
+  const titulo = tr.querySelector(".table__titulo").textContent;
+  
+  carrito.forEach(item => {
+    if(item.titulo.trim() === titulo){
+      sumaInput.value < 1 ? (sumaInput.value = 1) : sumaInput.value;
+      item.cantidad = sumaInput.value;
+      CarritoTotal()
+    }
+  })
+  console.log(carrito)
+}
+
+function addLocalStorage(){
+  localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+
+window.onload = function(){
+  const storage = JSON.parse(localStorage.getItem('carrito'));
+  if(storage){
+    carrito = storage;
+    renderCarrito()
+  }
+}
