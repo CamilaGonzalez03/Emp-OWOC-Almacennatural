@@ -50,7 +50,6 @@ function addItemCarrito(newItem){
   renderCarrito()
 }
 
-//tomo la informacion declarada en HTML
 function renderCarrito(){
   
   tbody.innerHTML = ''
@@ -94,7 +93,7 @@ function CarritoTotal(){
   addLocalStorage()
 }
 
-//Eliminar un producto del carrito
+//Eliminar productos del carrito
 function removeItemCarrito(e){
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".ItemCarrito")
