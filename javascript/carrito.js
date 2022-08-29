@@ -1,4 +1,4 @@
-//Agrego producto al carrito
+//Carrito de compras
 const ClickBoton = document.querySelectorAll('.boton')
 const tbody = document.querySelector('.tbody')
 let carrito = []
@@ -25,6 +25,7 @@ function addToCarritoItem(e){
 
 }
 
+//Agrego producto al carrito
 function addItemCarrito(newItem){
   
   const InputElemento = tbody.getElementsByClassName('input__elemento')
@@ -37,12 +38,19 @@ function addItemCarrito(newItem){
       return null;
     }
   }
+  Swal.fire({
+    icon: 'success',
+    title: 'Producto añadido al carrito!',
+    showConfirmButton: false,
+    timer: 1000
+})
 
   carrito.push(newItem)
 
   renderCarrito()
 }
 
+//tomo la informacion declarada en HTML
 function renderCarrito(){
   
   tbody.innerHTML = ''
@@ -73,6 +81,7 @@ function renderCarrito(){
 
 }
 
+//total de la compra
 function CarritoTotal(){
   let Total = 0;
   const itemCartTotal = document.querySelector('.itemCartTotal')
@@ -85,6 +94,7 @@ function CarritoTotal(){
   addLocalStorage()
 }
 
+//Eliminar un producto del carrito
 function removeItemCarrito(e){
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".ItemCarrito")
@@ -98,8 +108,17 @@ function removeItemCarrito(e){
     }
   tr.remove()
   CarritoTotal()
+
+  Swal.fire({
+    icon: 'error',
+    title: 'Producto eliminado!',
+    showConfirmButton: false,
+    timer: 1000
+})
+
 }
 
+//sumar el mismo producto varias veces
 function sumaCantidad(e){
   const sumaInput = e.target
   const tr = sumaInput.closest(".ItemCarrito")
@@ -112,9 +131,9 @@ function sumaCantidad(e){
       CarritoTotal()
     }
   })
-  console.log(carrito)
 }
 
+//Almacenamiendo de datos a traves de localStorage.
 function addLocalStorage(){
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }

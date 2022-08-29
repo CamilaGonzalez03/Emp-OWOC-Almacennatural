@@ -106,7 +106,7 @@ footer {
 
 .desarrollo {
   align-items: center;
-  background-color: rgba(194, 115, 42, 0.795);
+  background-color: rgba(255, 227, 133, 0.795);
   border-radius: 20px;
   border: solid 5px #CA431D;
   padding: 1rem;
@@ -122,7 +122,7 @@ footer {
     padding: 1rem; }
 
 .informacion {
-  background-color: rgba(194, 115, 42, 0.795);
+  background-color: rgba(255, 227, 133, 0.795);
   border-radius: 20px;
   border: solid 5px #700475;
   padding: 20px;
@@ -150,6 +150,7 @@ footer {
     font-size: 50px;
     font-weight: bold;
     color: #700475;
+    padding-top: 10px;
     margin-top: 3.5rem; }
   .nosotras__parrafo {
     font-family: "Square Peg", cursive;
@@ -181,6 +182,7 @@ form {
     font-size: 50px;
     font-weight: bold;
     color: #700475;
+    padding-top: 10px;
     margin-top: 3.5rem;
     font-weight: 900;
     font-size: 30px; }
@@ -224,6 +226,7 @@ form {
   font-size: 50px;
   font-weight: bold;
   color: #700475;
+  padding-top: 10px;
   margin-top: 3.5rem; }
 
 .container__productos {
@@ -245,6 +248,7 @@ form {
   font-size: 50px;
   font-weight: bold;
   color: #700475;
+  padding-top: 10px;
   margin-top: 3.5rem; }
 
 .container__promociones {
@@ -260,37 +264,81 @@ form {
 .row {
   width: 100%; }
 
+.button {
+  border-radius: 60px;
+  background-color: #CA431D;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px; }
+  .button:hover {
+    transform: scale(1.1); }
+
+.fetch {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #520556; }
+
+.image {
+  border-radius: 100px; }
+
 .carrito__titulo {
   color: #CA431D;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 30px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-top: 15px; }
 
 .table {
   color: #CA431D;
   font-family: "Square Peg", cursive;
   font-size: 30px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  height: 15px; }
+
+.table__productos {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 .table__imagen {
-  width: 9rem; }
+  width: 9rem;
+  padding-right: 20px; }
+
+.table__precio {
+  align-items: center; }
 
 .table__cantidad {
   font-size: 25px;
-  font-weight: bold; }
+  font-weight: bold;
+  align-items: center; }
 
 .itemCartTotal {
   font-weight: bold;
   font-family: "Square Peg", cursive;
-  font-size: 30px;
-  color: #CA431D; }
+  font-size: 40px;
+  color: #CA431D;
+  text-align: center; }
 
 .btn {
   background-color: #CA431D;
   font-family: "Poppins", sans-serif;
   border: #CA431D;
-  color: white; }
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  height: 50px; }
 
 * {
   margin: 0;

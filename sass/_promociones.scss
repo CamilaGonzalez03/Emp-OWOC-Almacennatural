@@ -16,3 +16,35 @@
 .row {
     width: 100%;
 }
+
+.button{
+    border-radius: 60px;
+    background-color: $color-navegacion;
+    color: $color-main;
+    padding: 1rem;
+    width: 100%;
+    font-family: $font-titulos;
+    font-size: 30px;
+    font-weight: bold;
+    color: $color-main;
+    margin-bottom: 10px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.fetch{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin: 15px;
+    font-family: $font-titulos;
+    font-size: 20px;
+    font-weight: bold;
+    color:$color-footer;
+}
+
+.image{
+    border-radius: 100px;
+}

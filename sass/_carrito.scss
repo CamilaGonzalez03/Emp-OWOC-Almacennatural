@@ -1,11 +1,10 @@
-
-
 .carrito__titulo{
     color: $color-navegacion;
     font-family: $font-titulos;
     font-weight: bold;
     font-size: 30px;
     padding-left: 20px;
+    padding-top: 15px;
 }
 
 .table{
@@ -13,27 +12,46 @@
     font-family: $font-subtitulos;
     font-size: 30px;
     margin-top: 20px;
+    height: 15px;
+}
+
+.table__productos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .table__imagen{
     width: 9rem;
+    padding-right: 20px;
+}
+
+.table__precio{
+    align-items: center;
 }
 
 .table__cantidad{
     font-size: 25px;
     font-weight: bold;
+    align-items: center;
 }
 
 .itemCartTotal{
     font-weight: bold;
     font-family: $font-subtitulos;
-    font-size: 30px;
+    font-size: 40px;
     color: $color-navegacion;
+    text-align: center;
 }
+
 
 .btn{
     background-color: $color-navegacion;
     font-family: $font-titulos;
     border: $color-navegacion;
     color: $color-main;
+    font-weight: bold;
+    align-items: center;
+    height: 50px;
 }
+
